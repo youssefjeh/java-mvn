@@ -37,7 +37,7 @@ pipeline {
       }
     }
     
-    stage("test") {
+   /* stage("test") {
       
       when {
         expression {
@@ -50,7 +50,7 @@ pipeline {
             gv.testApp()
         }
       }
-    }
+    } */
     
     stage("deploy") {
        /* input {

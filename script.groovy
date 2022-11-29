@@ -3,7 +3,7 @@ def buildJar() {
      sh 'mvn package'
 }
 
-def buildJar() {
+def buildImg() {
      echo 'building docker image..'
      withCredential([usernamePassword(credentialsId:'dockerhub-rep', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
         sh 'docker build -t dockerysf/my-app:3.0 .'
